@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataWise Innovations LLC - Making AI Relational and Human-Centered</title>
+    
+    <!-- Link to Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to our external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-900 text-gray-300">
+
+    <header class="bg-white/90 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-2xl font-bold text-gray-800">
+                    <span class="text-purple-600">DataWise</span> Innovations LLC
+                </a>
+                
+                <div class="hidden md:flex items-baseline space-x-4">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Solutions</a>
+                    <a href="#team" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Team</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Benefits</a>
+                    <button data-action="book-demo" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2">Book Demo</button>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" aria-label="Open Menu" class="text-gray-800 p-2 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="gradient-bg hero-pattern min-h-screen flex items-center pt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-yellow-300 fade-in">
+                    Making AI Relational and Human-Centered
+                </h1>
+                <p class="text-xl md:text-2xl text-yellow-200/90 mb-8 max-w-4xl mx-auto leading-relaxed fade-in stagger-1">
+                    We build holographic assistants and avatars that listen, adapt and connect. Powered by our GRAICE framework, DataWise Innovations turns customer service, training and human performance into experiences that are trusted, engaging and effective.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in stagger-2">
+                    <button data-action="book-demo" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-transform hover:scale-105 pulse-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
+                        📅 Book a Demo
+                    </button>
+                    <a href="#solutions" class="bg-white/10 border border-white/30 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                        🔍 Explore Our Solutions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Who We Are</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-animate>
+                        <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                            At DataWise Innovations, we believe technology should enhance human connection, not replace it. Based in North Carolina, we specialize in holographic assistants, AI avatars and relational AI platforms that make interactions more natural, empathetic and impactful.
+                        </p>
+                        <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                            With multiple patents pending, we're pioneering a future where AI is both powerful and human-centered.
+                        </p>
+                        <div class="bg-purple-900/30 p-6 rounded-lg border-l-4 border-purple-400">
+                            <p class="text-gray-200 italic">
+                                "It's like having a hologram helper who not only fixes your problems but also makes learning and asking questions fun — like talking to a friendly character who actually understands you. It can see your face, read your emotions and respond with its own eyes and mouth, so it feels alive and connected instead of just a chatbot."
+                            </p>
+                        </div>
+                    </div>
+                    <div data-animate class="bg-white p-8 rounded-2xl shadow-xl text-gray-900">
+                        <div class="text-center">
+                            <div class="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center">
+                                <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Patent-Pending GRAICE Framework</h3>
+                            <p class="text-gray-600">Revolutionary technology that makes AI interactions feel genuinely human and emotionally intelligent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Solution -->
+        <section class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div data-animate class="bg-red-50 text-gray-700 p-8 rounded-2xl border border-red-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-red-500 rounded-full flex items-center justify-center"><span class="text-3xl">⚠️</span></div>
+                            <h3 class="text-3xl font-bold text-red-800 mb-4">The Problem</h3>
+                        </div>
+                        <p class="leading-relaxed">Most customer service, training and learning platforms still rely on rigid chatbots or flat automation. These systems frustrate users, lower adoption and cost organizations time, money and trust. North Carolina businesses, schools and agencies risk falling behind if they continue depending on outdated AI that ignores human connection.</p>
+                    </div>
+                    <div data-animate class="bg-green-50 text-gray-700 p-8 rounded-2xl border border-green-200 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center"><span class="text-3xl">✨</span></div>
+                            <h3 class="text-3xl font-bold text-green-800 mb-4">Our Solution</h3>
+                        </div>
+                        <p class="leading-relaxed">DataWise Innovations replaces cold chatbots and bland online text with holographic and avatar AI assistants that listen, adapt and connect. Our assistants are emotionally intelligent, problem-solving and fun — delivering answers with empathy and trust. Unlike static bots, our holographic systems engage people in real time, with natural facial expressions and adaptive responses powered by advanced AI and computer vision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primary Competitive Advantage -->
+        <section class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Primary Competitive Advantage</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                </div>
+                <div class="max-w-4xl mx-auto" data-animate>
+                    <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-8 md:p-12 rounded-3xl text-white text-center">
+                        <h3 class="text-3xl font-bold mb-6">We Go Beyond Conversation</h3>
+                        <p class="text-xl leading-relaxed mb-8">Our competitive edge is <strong>relational intelligence</strong> powered by <strong>GRAICE</strong> (Generative Relational AI for Coherence & Emergence) — a proprietary framework that blends empathy, respect and ethical clarity with advanced machine learning.</p>
+                        <div class="bg-white/20 backdrop-blur-sm p-6 rounded-xl border border-white/30"><p class="text-lg">This ensures our avatars not only solve problems faster, but also strengthen trust, loyalty and connection.</p></div>
+                    </div>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 gap-12 items-center">
+                    <div data-animate>
+                        <h3 class="text-3xl font-bold text-white mb-6">What Are We Selling?</h3>
+                        <p class="text-lg text-gray-300 leading-relaxed">AI-powered relational avatars for customer service kiosks, chatbots and educational/training assistants designed to combine empathy, problem-solving and brand identity with advanced computer vision and conversational AI.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-8 rounded-2xl">
+                        <h4 class="text-2xl font-bold text-white mb-6">Key Selling Features</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">🤝</span><span class="text-gray-300">Empathetic, problem-solving interactions (vs. rigid scripts)</span></li>
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">🎭</span><span class="text-gray-300">Multi-modal (voice, gesture, AR/holographic display)</span></li>
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">🎨</span><span class="text-gray-300">Brandable avatars tied to company identity</span></li>
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">🔗</span><span class="text-gray-300">Seamless integration with CRM/HR systems</span></li>
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">⚡</span><span class="text-gray-300">GRAICE engine → combines technical intelligence with relational human values</span></li>
+                            <li class="flex items-start"><span class="text-purple-400 mr-3">🏆</span><span class="text-gray-300">Patent-pending tech (IP defensibility)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Solutions -->
+        <section id="solutions" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Our Solutions</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div data-animate class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-purple-500/10">
+                        <div class="text-center mb-6"><div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center"><span class="text-3xl">🤖</span></div><h3 class="text-2xl font-bold">AI Holo Avatar Assistant</h3></div>
+                        <p class="text-gray-700 leading-relaxed">We replace cold, rigid chatbots with holographic and avatar AI assistants that solve problems, read emotions and build trust. Perfect for retail, customer service and hospitality.</p>
+                    </div>
+                    <div data-animate class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-blue-500/10">
+                        <div class="text-center mb-6"><div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center"><span class="text-3xl">🎓</span></div><h3 class="text-2xl font-bold">Holo Teaching & Training Assistants</h3></div>
+                        <p class="text-gray-700 leading-relaxed">From classrooms to corporate training, our portable and room-scale holograms provide interactive teaching, Q&A and real-time coaching-making learning more engaging and scalable.</p>
+                    </div>
+                    <div data-animate class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-red-500/10">
+                        <div class="text-center mb-6"><div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center"><span class="text-3xl">🖥️</span></div><h3 class="text-2xl font-bold">Custom Software for Kiosks & Displays</h3></div>
+                        <p class="text-gray-700 leading-relaxed">We design and build AI-driven software layers over kiosks and digital displays, transforming static systems into interactive, adaptive platforms that enhance customer engagement and streamline operations.</p>
+                    </div>
+                    <div data-animate class="bg-white p-8 rounded-2xl shadow-xl text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-pink-500/10 border-2 border-purple-200">
+                        <div class="text-center mb-6"><div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center"><span class="text-3xl">⚡</span></div><h3 class="text-2xl font-bold text-purple-800">GRAICE Relational AI Framework</h3></div>
+                        <p class="text-gray-700 leading-relaxed">The engine behind our platforms. GRAICE blends advanced machine learning with human values - Gratitude, Respect, Attunement, Compassion and Ethical Clarity - ensuring every AI interaction feels trustworthy, adaptive and meaningful.</p>
+                    </div>
+                </div>
+                <div class="text-center" data-animate>
+                    <button data-action="see-all-solutions" class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400">See All Solutions →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Matters -->
+        <section class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Why It Matters</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div data-animate class="text-center p-8 bg-gray-700 rounded-2xl transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-500 rounded-full flex items-center justify-center"><span class="text-2xl">🤝</span></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Trust & Connection</h3>
+                        <p>AI that understands and responds with empathy builds stronger customer relationships and learner engagement.</p>
+                    </div>
+                    <div data-animate class="text-center p-8 bg-gray-700 rounded-2xl transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-green-500 rounded-full flex items-center justify-center"><span class="text-2xl">📈</span></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Efficiency & ROI</h3>
+                        <p>Reduce costly inefficiencies in service and training with AI that adapts in real time.</p>
+                    </div>
+                    <div data-animate class="text-center p-8 bg-gray-700 rounded-2xl transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-purple-500 rounded-full flex items-center justify-center"><span class="text-2xl">🚀</span></div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Future-Ready Technology</h3>
+                        <p>Scalable holographic and avatar platforms that position organizations - and North Carolina - at the forefront of relational AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Backed by Experience -->
+        <section class="py-20 gradient-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Innovation Backed by Experience</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-4xl mb-4">🏆</div><h3 class="text-xl font-bold text-white mb-4">Patents Pending</h3>
+                        <p class="text-white/90">In holographic systems, AI-driven relational frameworks and advanced training platforms.</p>
+                    </div>
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-4xl mb-4">🎓</div><h3 class="text-xl font-bold text-white mb-4">Academic & Industry Partnerships</h3>
+                        <p class="text-white/90">With UNC Charlotte and regional innovators.</p>
+                    </div>
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-4xl mb-4">⭐</div><h3 class="text-xl font-bold text-white mb-4">NC Innovation Recognition</h3>
+                        <p class="text-white/90">For transformative applications in customer service, training and public safety.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Team -->
+        <section id="team" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Meet the Team</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div data-animate class="bg-white p-6 rounded-2xl shadow-xl text-center text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center"><span class="text-2xl text-white font-bold">LJ</span></div>
+                        <h3 class="text-xl font-bold mb-2">Dr. Liz Johnson</h3>
+                        <p class="text-purple-600 font-semibold mb-3">Co-Founder & Chief Visionary</p>
+                        <p class="text-gray-600 text-sm">Professor, researcher and innovator in AI, ethics and human-computer interaction. Dedicated to designing technologies that enhance trust, learning and well-being.</p>
+                    </div>
+                    <div data-animate class="bg-white p-6 rounded-2xl shadow-xl text-center text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center"><span class="text-2xl text-white font-bold">TH</span></div>
+                        <h3 class="text-xl font-bold mb-2">Tyler Hudson</h3>
+                        <p class="text-purple-600 font-semibold mb-3">Co-Founder & Chief Technologist</p>
+                        <p class="text-gray-600 text-sm">Expert in computer vision, AR/VR and applied AI systems. Leads development of scalable holographic and relational AI platforms.</p>
+                    </div>
+                    <div data-animate class="bg-white p-6 rounded-2xl shadow-xl text-center text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center"><span class="text-2xl text-white font-bold">BY</span></div>
+                        <h3 class="text-xl font-bold mb-2">Bruh Lemma Yadecha</h3>
+                        <p class="text-purple-600 font-semibold mb-3">Computer Vision & ML Specialist</p>
+                        <p class="text-gray-600 text-sm">Expert in advanced computer vision, facial and product recognition and applied machine learning. Combines deep technical skill with strong customer focus.</p>
+                    </div>
+                    <div data-animate class="bg-white p-6 rounded-2xl shadow-xl text-center text-gray-900 transition-all duration-300 ease-in-out hover:-translate-y-2">
+                        <div class="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center"><span class="text-2xl text-white font-bold">JC</span></div>
+                        <h3 class="text-xl font-bold mb-2">Jessica Cochran</h3>
+                        <p class="text-purple-600 font-semibold mb-3">3D Modeler & Cyber Specialist</p>
+                        <p class="text-gray-600 text-sm">Skilled in 3D modeling and cyber expertise. Bridges design with security to create reliable, immersive solutions with exceptional customer service focus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="py-20 gradient-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Value Proposition</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                    <p class="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed mt-8">
+                        Our AI Relational Avatars transform ordinary kiosks, chatbots and educational assistants into empathetic, adaptive and trust-building companions. Unlike transactional bots that frustrate users with rigid scripts, our avatars listen, attune and problem-solve in real time, creating meaningful interactions that improve customer satisfaction, learner engagement and organizational efficiency.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🏢</div>
+                            <h3 class="text-xl font-bold text-white mb-4">For Businesses</h3>
+                            <p class="text-white/90">Faster service, happier customers and lower costs through intelligent automation that feels human.</p>
+                        </div>
+                    </div>
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎓</div>
+                            <h3 class="text-xl font-bold text-white mb-4">For Education</h3>
+                            <p class="text-white/90">More engaging training and improved learning outcomes with immersive, adaptive instruction.</p>
+                        </div>
+                    </div>
+                    <div data-animate class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🌟</div>
+                            <h3 class="text-xl font-bold text-white mb-4">For North Carolina</h3>
+                            <p class="text-white/90">New jobs in AI, holographics and immersive tech — positioning the state as the national hub for relational AI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12" data-animate>
+                    <p class="text-2xl font-bold text-yellow-300 mb-4">
+                        This is more than tech — it's the future of customer service, training and human performance
+                    </p>
+                    <p class="text-lg text-white/90">
+                        There are no direct competitors offering holographic, emotionally intelligent AI assistants at scale. This is NC's chance to lead.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section id="benefits" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Top Benefits</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto mt-8">
+                        Transformational outcomes that mark a new era in how people and AI connect
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-blue-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🤝</span></div><h3 class="text-lg font-bold text-white">Improved Trust</h3></div>
+                        <p>Customers feel heard and respected, which strengthens loyalty and brand reputation.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-green-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🎯</span></div><h3 class="text-lg font-bold text-white">Better Engagement</h3></div>
+                        <p>Learners, employees and users interact more deeply with content, leading to higher adoption and retention.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-purple-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">⚡</span></div><h3 class="text-lg font-bold text-white">Faster Learning</h3></div>
+                        <p>Holographic teaching assistants deliver immersive, adaptive instruction that accelerates skill-building.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-orange-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">👥</span></div><h3 class="text-lg font-bold text-white">More Effective Teams</h3></div>
+                        <p>AR glasses and performance systems measure mental + physical competency, improving coordination and decision-making.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-red-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">🚀</span></div><h3 class="text-lg font-bold text-white">Reduced Friction</h3></div>
+                        <p>Adaptive avatars detect and resolve issues in real time, cutting down frustration and repeat interactions.</p>
+                    </div>
+                    <div data-animate class="bg-gray-700 p-6 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-2 border-l-4 border-indigo-400">
+                        <div class="flex items-center mb-4"><div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mr-4"><span class="text-2xl">📈</span></div><h3 class="text-lg font-bold text-white">Scalability with Humanity</h3></div>
+                        <p>Organizations can serve more people without losing the human touch.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center" data-animate>
+                    <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-8 rounded-2xl text-white">
+                        <h3 class="text-2xl font-bold mb-4">🏆 Innovation Differentiation</h3>
+                        <p class="text-lg">Patent-pending GRAICE framework provides unique, defensible value compared to generic chatbots and kiosks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-animate>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Get in Touch</h2>
+                    <div class="w-24 h-1 bg-purple-400 mx-auto"></div>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto mt-8">
+                        Have a question or want to discuss a project? Fill out the form below, and we'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <!--
+                  - The <form> tag points to your unique Formspree endpoint.
+                  - You will get this URL from the Formspree website in the next step.
+                -->
+			<form action="https://formspree.io/f/mblzylba" method="POST"          
+			   class="max-w-xl mx-auto" data-animate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                            <input type="text" name="name" id="name" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition duration-200" placeholder="Jane Doe">
+                        </div>
+                        <!-- Email Field -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                            <input type="email" name="email" id="email" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition duration-200" placeholder="jane.doe@example.com">
+                        </div>
+                    </div>
+                    
+                    <!-- Subject Field -->
+                    <div class="mb-6">
+                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" name="subject" id="subject" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition duration-200" placeholder="Inquiry about Holographic Assistants">
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="mb-8">
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea name="message" id="message" rows="5" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 text-white focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 transition duration-200" placeholder="Tell us how we can help..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-800 w-full sm:w-auto">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 gradient-bg">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to Transform Your Customer Experience?
+                </h2>
+                <p data-animate class="text-xl text-white/90 mb-8">
+                    Join the future of human-centered AI. Let's build something amazing together.
+                </p>
+                <div data-animate class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button data-action="book-demo" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all pulse-glow">
+                        📅 Book Your Demo Today
+                    </button>
+                   <!-- UPDATED "Contact Us" BUTTON -->
+<a href="#contact" class="bg-white/20 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/30 transition-all border border-white/30">
+    💬 Contact Us
+</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/70 border-t border-gray-700/50 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="text-purple-400">DataWise</span> Innovations LLC
+                    </h3>
+                    <p class="text-gray-400 mb-4">
+                        Making AI relational and human-centered through holographic assistants and avatars.
+                    </p>
+                    <p class="text-gray-400">Based in North Carolina</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-purple-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-purple-400 transition-colors">About</a></li>
+                        <li><a href="#solutions" class="text-gray-300 hover:text-purple-400 transition-colors">Solutions</a></li>
+                        <li><a href="#benefits" class="text-gray-300 hover:text-purple-400 transition-colors">Benefits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Get Started</h4>
+                    <button data-action="book-demo" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors mb-4 block w-full sm:w-auto">
+                        Book a Demo
+                    </button>
+                    <p class="text-gray-400 text-sm">
+                        Ready to see holographic AI in action? Let's schedule a personalized demonstration.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 DataWise Innovations LLC. All rights reserved. | Patent-pending GRAICE framework technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to our external JavaScript file -->
+    <script src="main.js" defer></script>
+</body>
+</html>
