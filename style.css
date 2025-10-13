@@ -4,6 +4,22 @@
     background: linear-gradient(145deg, #111827 0%, #1a1a2e 100%);
 }
 
+body {
+  /* Specify the image file and prevent it from repeating */
+  background-image: url('path/to/your/logo.png');
+  background-repeat: no-repeat;
+  
+  /* Prevent the background image from scrolling with the content */
+  background-attachment: fixed;
+  
+  /* Center the image horizontally and vertically */
+  background-position: center;
+  
+  /* Scale the image to cover the entire page without stretching */
+  background-size: cover;
+}
+
+
 /* A subtle pattern to add texture */
 .hero-pattern {
     background-image: 
