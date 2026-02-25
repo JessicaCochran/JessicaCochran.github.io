@@ -1,0 +1,1764 @@
+/* ===================================
+   Defender Page Specific Styles
+   Faith Defense Ministry
+   =================================== */
+
+/* ===================================
+   Page Header
+   =================================== */
+.defender-header {
+    background-image: url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    padding: 200px 0 120px;
+    text-align: center;
+}
+
+.defender-header .page-header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.defender-header h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.header-description {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.header-cta {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.header-cta strong {
+    color: var(--secondary-color);
+}
+
+/* ===================================
+   Course Navigation
+   =================================== */
+.course-nav-section {
+    background: var(--primary-dark);
+    padding: 25px 0;
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.course-nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-nav-wrapper h3 {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 0;
+    white-space: nowrap;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.course-nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.course-nav-link {
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+    white-space: nowrap;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.course-nav-link:hover,
+.course-nav-link.active {
+    background: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   Session Sections
+   =================================== */
+.session-section {
+    padding: 100px 0;
+    scroll-margin-top: 150px;
+}
+
+.session-section.alt-bg {
+    background-color: var(--bg-light);
+}
+
+/* ===================================
+   Session Header
+   =================================== */
+.session-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.session-number-badge {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+}
+
+.session-number-badge span:first-child {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.session-number-badge .number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.session-title-block {
+    flex: 1;
+}
+
+.session-title-block h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.session-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-medium);
+    font-style: italic;
+    margin: 0;
+    max-width: 750px;
+    line-height: 1.6;
+}
+
+/* ===================================
+   Session Content Grid
+   =================================== */
+.session-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* ===================================
+   Session Visual Column
+   =================================== */
+.session-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: sticky;
+    top: 180px;
+}
+
+/* ===================================
+   Session Image Card
+   =================================== */
+.session-image-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+.alt-bg .session-image-card {
+    background: var(--white);
+}
+
+.image-placeholder {
+    height: 220px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>');
+    background-size: 100px;
+    opacity: 0.5;
+}
+
+.image-placeholder i {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+.image-placeholder span {
+    font-size: 1.05rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    max-width: 200px;
+    line-height: 1.4;
+}
+
+/* Specific Image Placeholder Variations */
+.image-placeholder.apostle-paul {
+    background: linear-gradient(135deg, #2c5282, #1a365d);
+}
+
+.image-placeholder.josephus {
+    background: linear-gradient(135deg, #744210, #5a3510);
+}
+
+.image-placeholder.tacitus {
+    background: linear-gradient(135deg, #742a2a, #5a1a1a);
+}
+
+.image-placeholder.john-eyewitness {
+    background: linear-gradient(135deg, #285e61, #1d4044);
+}
+
+.image-placeholder.resurrection {
+    background: linear-gradient(135deg, #c9a227, #d4b94a);
+}
+
+.image-placeholder.miracle {
+    background: linear-gradient(135deg, #553c9a, #44337a);
+}
+
+.image-placeholder.deity {
+    background: linear-gradient(135deg, #9c4221, #7b341e);
+}
+
+/* Image Quote */
+.image-quote {
+    padding: 25px 30px;
+    margin: 0;
+    border-left: 5px solid var(--secondary-color);
+    background: linear-gradient(135deg, var(--bg-cream), var(--white));
+}
+
+.image-quote p {
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.image-quote cite {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+}
+
+.scripture-quote-block {
+    background: linear-gradient(135deg, #fffef5, #fefcf0);
+    border-left-color: var(--primary-color);
+}
+
+.image-caption {
+    padding: 18px 25px;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-medium);
+    background: var(--bg-cream);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   Session Theme Badge
+   =================================== */
+.session-theme-badge {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 28px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 14px;
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.session-theme-badge i {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.session-theme-badge span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* ===================================
+   Stats Comparison Card
+   =================================== */
+.stats-comparison-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.stat-large {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.stat-large .stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 1;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.stat-large .stat-label {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.stat-large .stat-desc {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.stat-comparison {
+    padding-top: 10px;
+}
+
+.stat-small .stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-small .stat-label {
+    display: block;
+    font-size: 1rem;
+    color: var(--text-medium);
+    font-weight: 500;
+}
+
+.stat-small .stat-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* ===================================
+   Comparison Visual
+   =================================== */
+.comparison-visual {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.comparison-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.comparison-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.comparison-icon.jesus {
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    color: var(--white);
+}
+
+.comparison-icon.caesar {
+    background: linear-gradient(135deg, #718096, #a0aec0);
+    color: var(--white);
+}
+
+.comparison-icon i {
+    font-size: 1.75rem;
+}
+
+.comparison-item span {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.vs-badge {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.comparison-stat {
+    font-style: italic;
+    color: var(--text-medium);
+    margin: 15px 0 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.comparison-visual > cite {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* ===================================
+   Legal Standard Card
+   =================================== */
+.legal-standard-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--primary-color);
+}
+
+.legal-icon {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    box-shadow: var(--shadow-sm);
+}
+
+.legal-icon i {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.legal-label {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.legal-text {
+    font-style: italic;
+    color: var(--text-medium);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===================================
+   Expert Card
+   =================================== */
+.expert-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.expert-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.3);
+}
+
+.expert-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.expert-name {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.expert-desc {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===================================
+   Scripture Highlight Card
+   =================================== */
+.scripture-highlight-card {
+    background: linear-gradient(135deg, var(--bg-cream), var(--white));
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--secondary-color);
+}
+
+.scripture-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.scripture-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.scripture-ref {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.scripture-highlight-card blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.scripture-highlight-card blockquote p {
+    font-style: italic;
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.scripture-note {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.scripture-highlight {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* ===================================
+   Book Highlight Card
+   =================================== */
+.book-highlight-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--accent-color);
+}
+
+.book-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), #b22222);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.book-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.book-stats {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.book-challenge {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* ===================================
+   Scholars Card
+   =================================== */
+.scholars-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.scholars-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.scholars-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.scholars-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.scholars-points {
+    text-align: left;
+}
+
+.scholars-points li {
+    padding: 10px 15px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    font-style: italic;
+}
+
+.scholars-points li:last-child {
+    margin-bottom: 0;
+}
+
+/* ===================================
+   Modern Miracles Card
+   =================================== */
+.modern-miracles-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.miracles-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #805ad5, #6b46c1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+}
+
+.miracles-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.miracles-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.modern-miracles-card blockquote {
+    margin: 0;
+    padding: 20px;
+    background: var(--bg-light);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+    text-align: left;
+}
+
+.modern-miracles-card blockquote p {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.modern-miracles-card blockquote cite {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* ===================================
+   Eyewitness Acts Card
+   =================================== */
+.eyewitness-acts-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.eyewitness-acts-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.eyewitness-acts-card h4 i {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+.eyewitness-verses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.eyewitness-verses blockquote {
+    margin: 0;
+    padding: 18px;
+    background: var(--bg-light);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.eyewitness-verses blockquote p {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.eyewitness-verses blockquote cite {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* ===================================
+   Verified Facts Card
+   =================================== */
+.verified-facts-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--secondary-color);
+}
+
+.verified-facts-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.verified-facts-card h4 i {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+.verified-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.verified-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.5;
+}
+
+.verified-list li i {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* ===================================
+   Session Main Content
+   =================================== */
+.session-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ===================================
+   Learn Card
+   =================================== */
+.learn-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.alt-bg .learn-card {
+    background: var(--white);
+}
+
+.learn-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.learn-card h3 i {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+.learn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.learn-list li {
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+.learn-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.learn-list li strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* ===================================
+   Quotes Card
+   =================================== */
+.quotes-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.alt-bg .quotes-card {
+    background: var(--white);
+}
+
+.quotes-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.quotes-card h3 i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.quote-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.quote-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.quote-label {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.quote-item blockquote {
+    margin: 0;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, var(--bg-cream), var(--bg-light));
+    border-radius: 12px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.quote-item blockquote p {
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.quote-item blockquote cite {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    display: block;
+}
+
+.quote-item blockquote cite em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* ===================================
+   Session Actions
+   =================================== */
+.session-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 2px solid var(--border-color);
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    flex: 1;
+    justify-content: center;
+    min-width: 140px;
+}
+
+.read-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
+.read-btn:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(26, 54, 93, 0.3);
+}
+
+.watch-btn {
+    background: linear-gradient(135deg, #c53030, #e53e3e);
+    color: var(--white);
+    border: 2px solid #c53030;
+}
+
+.watch-btn:hover {
+    background: #9b2c2c;
+    border-color: #9b2c2c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 48, 48, 0.3);
+}
+
+.share-btn {
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    color: var(--white);
+    border: 2px solid var(--secondary-color);
+}
+
+.share-btn:hover {
+    background: #b8922a;
+    border-color: #b8922a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.3);
+}
+
+.action-btn i {
+    font-size: 1.1rem;
+}
+
+/* ===================================
+   Completion CTA Section
+   =================================== */
+.completion-cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    padding: 100px 0;
+}
+
+.completion-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.completion-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 30px rgba(201, 162, 39, 0.4);
+}
+
+.completion-icon i {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.completion-cta h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.completion-cta > .completion-content > p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.completion-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .stat-num {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 1;
+}
+
+.stat-item .stat-text {
+    display: block;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.completion-cta .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===================================
+   Responsive Styles
+   =================================== */
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+    .session-content-grid {
+        gap: 40px;
+    }
+    
+    .session-visual {
+        position: static;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .defender-header {
+        padding: 160px 0 100px;
+    }
+    
+    .defender-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-description {
+        font-size: 1.1rem;
+    }
+    
+    .course-nav-section {
+        position: relative;
+        top: 0;
+    }
+    
+    .course-nav-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .course-nav-links {
+        width: 100%;
+    }
+    
+    .session-section {
+        padding: 70px 0;
+        scroll-margin-top: 100px;
+    }
+    
+    .session-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .session-number-badge {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .session-number-badge .number {
+        font-size: 2.5rem;
+    }
+    
+    .session-title-block h2 {
+        font-size: 2rem;
+    }
+    
+    .session-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .session-visual {
+        order: 2;
+    }
+    
+    .session-main-content {
+        order: 1;
+    }
+    
+    .completion-stats {
+        gap: 30px;
+    }
+    
+    .stat-item .stat-num {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .defender-header {
+        padding: 140px 0 80px;
+    }
+    
+    .defender-header h1 {
+        font-size: 2rem;
+    }
+    
+    .header-description {
+        font-size: 1rem;
+    }
+    
+    .header-cta {
+        font-size: 1.2rem;
+    }
+    
+    .course-nav-link {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+    
+    .session-section {
+        padding: 60px 0;
+    }
+    
+    .session-number-badge {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .session-number-badge .number {
+        font-size: 2rem;
+    }
+    
+    .session-number-badge span:first-child {
+        font-size: 0.6rem;
+    }
+    
+    .session-title-block h2 {
+        font-size: 1.75rem;
+    }
+    
+    .session-subtitle {
+        font-size: 1rem;
+    }
+    
+    .learn-card,
+    .quotes-card {
+        padding: 25px;
+    }
+    
+    .learn-card h3,
+    .quotes-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .quote-item blockquote {
+        padding: 15px 20px;
+    }
+    
+    .quote-item blockquote p {
+        font-size: 0.95rem;
+    }
+    
+    .session-actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+    }
+    
+    .image-placeholder {
+        height: 180px;
+    }
+    
+    .stats-comparison-card {
+        padding: 25px;
+    }
+    
+    .stat-large .stat-number {
+        font-size: 2.75rem;
+    }
+    
+    .completion-cta {
+        padding: 70px 0;
+    }
+    
+    .completion-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .completion-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .completion-icon i {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .defender-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .header-description {
+        font-size: 0.95rem;
+    }
+    
+    .header-cta {
+        font-size: 1.1rem;
+    }
+    
+    .course-nav-link {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        border-radius: 15px;
+    }
+    
+    .session-header {
+        margin-bottom: 40px;
+    }
+    
+    .session-number-badge {
+        width: 70px;
+        height: 70px;
+        border-radius: 14px;
+    }
+    
+    .session-number-badge .number {
+        font-size: 1.75rem;
+    }
+    
+    .session-title-block h2 {
+        font-size: 1.5rem;
+    }
+    
+    .session-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .learn-card,
+    .quotes-card {
+        padding: 20px;
+    }
+    
+    .learn-card h3,
+    .quotes-card h3 {
+        font-size: 1.1rem;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .learn-list li {
+        padding-left: 20px;
+        font-size: 0.95rem;
+    }
+    
+    .learn-list li::before {
+        width: 8px;
+        height: 8px;
+        top: 9px;
+    }
+    
+    .quote-label {
+        font-size: 0.7rem;
+        padding: 4px 12px;
+    }
+    
+    .quote-item blockquote p {
+        font-size: 0.9rem;
+    }
+    
+    .quote-item blockquote cite {
+        font-size: 0.8rem;
+    }
+    
+    .session-theme-badge {
+        padding: 18px 20px;
+        gap: 12px;
+    }
+    
+    .session-theme-badge i {
+        font-size: 1.3rem;
+    }
+    
+    .session-theme-badge span {
+        font-size: 1rem;
+    }
+    
+    .image-placeholder {
+        height: 160px;
+    }
+    
+    .image-placeholder i {
+        font-size: 2.5rem;
+    }
+    
+    .image-placeholder span {
+        font-size: 0.9rem;
+    }
+    
+    .image-quote {
+        padding: 20px;
+    }
+    
+    .image-quote p {
+        font-size: 0.95rem;
+    }
+    
+    .stats-comparison-card {
+        padding: 20px;
+    }
+    
+    .stat-large .stat-number {
+        font-size: 2.25rem;
+    }
+    
+    .stat-large .stat-label {
+        font-size: 1rem;
+    }
+    
+    .stat-small .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .comparison-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .comparison-icon i {
+        font-size: 1.4rem;
+    }
+    
+    .legal-standard-card,
+    .expert-card,
+    .scripture-highlight-card,
+    .book-highlight-card,
+    .scholars-card,
+    .modern-miracles-card,
+    .eyewitness-acts-card,
+    .verified-facts-card {
+        padding: 22px;
+    }
+    
+    .action-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .completion-stats {
+        gap: 25px;
+    }
+    
+    .stat-item .stat-num {
+        font-size: 2rem;
+    }
+    
+    .stat-item .stat-text {
+        font-size: 0.9rem;
+    }
+    
+    .completion-cta h2 {
+        font-size: 1.75rem;
+    }
+    
+    .completion-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .completion-cta .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+    .course-nav-section,
+    .session-actions,
+    .completion-cta {
+        display: none;
+    }
+    
+    .session-section {
+        padding: 30px 0;
+        page-break-inside: avoid;
+    }
+    
+    .session-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .session-visual {
+        display: none;
+    }
+    
+    .learn-card,
+    .quotes-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ===================================
+   Animation Classes
+   =================================== */
+.session-section.animate-in .session-header {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.session-section.animate-in .session-visual {
+    animation: fadeInLeft 0.6s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.session-section.animate-in .session-main-content {
+    animation: fadeInRight 0.6s ease 0.2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===================================
+   Hover Effects
+   =================================== */
+.session-image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition);
+}
+
+.stats-comparison-card:hover,
+.comparison-visual:hover,
+.legal-standard-card:hover,
+.expert-card:hover,
+.scripture-highlight-card:hover,
+.book-highlight-card:hover,
+.scholars-card:hover,
+.modern-miracles-card:hover,
+.eyewitness-acts-card:hover,
+.verified-facts-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition);
+}
+
+.learn-card:hover,
+.quotes-card:hover {
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.course-nav-link:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.action-btn:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* ===================================
+   Accessibility Improvements
+   =================================== */
+.session-section:target {
+    outline: none;
+}
+
+.session-section:target .session-header {
+    animation: highlightSection 1s ease;
+}
+
+@keyframes highlightSection {
+    0%, 100% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(201, 162, 39, 0.1);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .session-section.animate-in .session-header,
+    .session-section.animate-in .session-visual,
+    .session-section.animate-in .session-main-content {
+        animation: none;
+        opacity: 1;
+    }
+    
+    .session-image-card:hover,
+    .stats-comparison-card:hover,
+    .comparison-visual:hover,
+    .legal-standard-card:hover,
+    .expert-card:hover,
+    .scripture-highlight-card:hover,
+    .book-highlight-card:hover,
+    .scholars-card:hover,
+    .modern-miracles-card:hover,
+    .eyewitness-acts-card:hover,
+    .verified-facts-card:hover,
+    .action-btn:hover,
+    .course-nav-link:hover {
+        transform: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .session-number-badge,
+    .session-theme-badge,
+    .action-btn {
+        border: 2px solid currentColor;
+    }
+    
+    .quote-item blockquote {
+        border-left-width: 6px;
+    }
+    
+    .learn-list li::before {
+        border: 2px solid var(--primary-color);
+    }
+}
