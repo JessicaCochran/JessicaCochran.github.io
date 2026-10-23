@@ -1,0 +1,40 @@
+[
+  {
+    "id": "historical-proof",
+    "title": "Historical Proof for the New Testament",
+    "subtitle": "The Strongest Factual Record in Ancient History",
+    "description": "Against the attacks by social media and skeptics, this 8-session training brings the strongest historical facts and best experts to arm your defense of the New Testament.",
+    "num_sessions": 8,
+    "sessions": [
+      { "number": 1, "title": "Defending Faith", "desc": "Why Jesus Used \"Convincing Proofs\" & So Should We" },
+      { "number": 2, "title": "Jesus Exists", "desc": "What Historical Facts Confirm Gospel Truths About Jesus" },
+      { "number": 3, "title": "Best Record", "desc": "How the New Testament is the Best Factual Record in Ancient History" },
+      { "number": 4, "title": "Gospel Reliability", "desc": "What Eyewitness Testimony Supports New Testament Reliability" },
+      { "number": 5, "title": "Resurrection Evidence", "desc": "Who Are the Eyewitnesses Standing Up for the Resurrection" },
+      { "number": 6, "title": "Miracles Recorded", "desc": "What Historical Evidence Affirms Miracles" },
+      { "number": 7, "title": "Lord Jesus Christ", "desc": "How the Earliest Records Proclaimed the Deity of Jesus Christ" },
+      { "number": 8, "title": "Acts as History", "desc": "Why the Book of Acts Corroborates All That We Covered" }
+    ],
+    "includes": [
+      "Written Materials (8–12 pages per session)",
+      "Oral Presentation for each session",
+      "Shareable Resources for Disciple-Making"
+    ]
+  },
+  {
+    "id": "second-course",
+    "title": "Your Second Course Title",
+    "subtitle": "Short tagline here",
+    "description": "Short description of the course (replace with your content).",
+    "num_sessions": 6,
+    "sessions": [
+      { "number": 1, "title": "Session 1 Title", "desc": "Short description" },
+      { "number": 2, "title": "Session 2 Title", "desc": "Short description" }
+    ],
+    "includes": [
+      "Written Materials",
+      "Oral Presentations",
+      "Shareable Resources"
+    ]
+  }
+]
