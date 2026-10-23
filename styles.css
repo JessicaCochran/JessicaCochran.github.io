@@ -33,6 +33,7 @@ body {
   background: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.7;
+  overflow-x: hidden;
 }
 
 a {
@@ -382,7 +383,7 @@ p {
 
 @media (max-width: 680px) {
   .section {
-    padding: 64px 0;
+    padding: 48px 0;
   }
 
   .nav-container {
@@ -394,20 +395,47 @@ p {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .nav-link {
     font-size: 0.9rem;
+    display: block;
+    width: 100%;
   }
 
   .page-header {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 92px;
+    padding-bottom: 72px;
+  }
+
+  .page-header h1 {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .page-header p {
+    font-size: 1.05rem;
+  }
+
+  .feature-card h2,
+  .content-card h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
+  .feature-card p,
+  .content-card p {
+    font-size: 1rem;
   }
 
   .course-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .course-card {
+    padding: 20px 18px;
   }
 
   .footer-grid {
@@ -416,7 +444,7 @@ p {
 
   .feature-card,
   .content-card {
-    padding: 24px 20px;
+    padding: 22px 18px;
   }
 
   .btn,
@@ -427,6 +455,14 @@ p {
   .section-cta {
     width: 100%;
   }
+
+  .footer {
+    padding-top: 44px;
+  }
+
+  .footer-bottom {
+    font-size: 0.82rem;
+  }
 }
 
 @media (max-width: 420px) {
@@ -436,10 +472,10 @@ p {
   }
 
   .page-header h1 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
-  .course-card {
-    padding: 20px 18px;
+  .logo {
+    font-size: 1.15rem;
   }
 }
