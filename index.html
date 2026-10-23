@@ -7,24 +7,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Faith Defense Ministry</h1>
-    <h2>Defending Faith. Making Disciples.</h2>
+  <header class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="logo">Faith Defense</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="trial-plan.html" class="nav-link">Trial Plan</a></li>
+        <li><a href="#" class="nav-link">Evidence</a></li>
+        <li><a href="#" class="nav-link">Testimony</a></li>
+        <li><a href="#" class="nav-link">Contact / About</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <p>Equipping believers with historical evidence, expert testimony, and biblical foundations...</p>
+    <section class="hero">
+      <p class="eyebrow">Defending faith. Making disciples.</p>
+      <h1>Faith Defense Ministry</h1>
+      <p class="hero-copy">Equipping believers with historical evidence, expert testimony, and biblical foundations to confidently defend the truth of Jesus Christ and the New Testament.</p>
     </section>
 
-    <section id="featured-courses">
-      <h2>Featured Training Courses</h2>
+    <section class="content-block">
+      <p>We believe the Christian faith is not only spiritually true, but historically grounded. Through careful study, clear teaching, and practical discipleship, we help believers stand firm in a culture that often questions the reliability of Scripture.</p>
+    </section>
+
+    <section class="feature-section">
+      <div class="section-heading">
+        <h2>Our Courses</h2>
+        <p>Explore a growing library of Bible and apologetics resources designed to strengthen faith, sharpen reasoning, and equip everyday witness.</p>
+      </div>
+
       <div id="featured-grid" class="course-grid"></div>
-      <a href="courses.html" class="button">Browse All Courses →</a>
+
+      <div class="section-actions">
+        <a href="courses.html" class="button">Browse all courses →</a>
+      </div>
     </section>
 
-    <!-- Keep your existing "Why This Mission Matters" and "Trial Plan" sections -->
+    <section class="content-block">
+      <h2>Why This Mission Matters</h2>
+      <p>Believers are often asked to defend their faith in the midst of skepticism, confusion, and social pressure. This ministry exists to provide clear, credible, and faithful answers rooted in both Scripture and historical evidence.</p>
+    </section>
+
+    <section class="content-block">
+      <h2>Our Trial Plan</h2>
+      <p>We approach teaching with a careful, gospel-centered method: explain the issue clearly, weigh the historical evidence, and call believers to trust the truth that Jesus revealed.</p>
+      <a href="trial-plan.html" class="button secondary">See the trial plan</a>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2024 Faith Defense Ministry</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
