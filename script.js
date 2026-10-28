@@ -46,27 +46,52 @@ async function renderCourseDetail() {
   const course = courses.find(c => c.id === id);
   if (!course) return;
 
-  document.getElementById('course-title').textContent = course.title;
-  document.getElementById('course-subtitle').textContent = course.subtitle;
-  document.getElementById('course-description').textContent = course.description;
+  const pageTitle = document.getElementById('page-title');
+  const detailTitle = document.getElementById('course-title');
+  const subtitle = document.getElementById('course-subtitle');
+  const description = document.getElementById('course-description');
+  const detail = document.getElementById('course-detail');
+  const grid = document.getElementById('courses-grid');
 
-  // Sessions
+  if (pageTitle) pageTitle.style.display = 'none';
+  if (detailTitle) {
+    detailTitle.textContent = course.title;
+    detailTitle.style.display = 'block';
+  }
+  if (subtitle) {
+    subtitle.textContent = course.subtitle;
+    subtitle.style.display = 'block';
+  }
+  if (description) description.textContent = course.description;
+  if (detail) detail.style.display = 'block';
+  if (grid) grid.style.display = 'none';
+
   const sessionsContainer = document.getElementById('sessions-list');
-  sessionsContainer.innerHTML = course.sessions.map(s => `
-    <div class="session">
-      <h4>${s.number}. ${s.title}</h4>
-      <p>${s.desc}</p>
-    </div>
-  `).join('');
+  if (sessionsContainer) {
+    sessionsContainer.innerHTML = course.sessions.map(s => `
+      <div class="session">
+        <h4>${s.number}. ${s.title}</h4>
+        <p>${s.desc}</p>
+      </div>
+    `).join('');
+  }
 
-  // Includes
   const includesContainer = document.getElementById('includes-list');
-  includesContainer.innerHTML = course.includes.map(item => `<li>${item}</li>`).join('');
+  if (includesContainer) {
+    includesContainer.innerHTML = course.includes.map(item => `<li>${item}</li>`).join('');
+  }
 }
 
 // Auto-run based on page
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+
+  if (id) {
+    await renderCourseDetail();
+    return;
+  }
+
   if (document.getElementById('featured-grid')) renderFeatured();
   if (document.getElementById('courses-grid')) renderAllCourses();
-  if (document.getElementById('course-title')) renderCourseDetail();
 });
