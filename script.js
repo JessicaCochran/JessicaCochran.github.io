@@ -4,6 +4,97 @@ async function loadCourses() {
   return await res.json();
 }
 
+function renderSiteShell() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  const navTarget = document.getElementById('site-nav');
+  if (navTarget) {
+    const navItems = [
+      { href: 'index.html', label: 'Home' },
+      { href: 'course.html', label: 'Courses' },
+      { href: 'trial-plan.html', label: 'Trial Plan' },
+      { href: '#', label: 'Evidence' },
+      { href: '#', label: 'Testimony' },
+      { href: '#', label: 'Contact / About', btn: true }
+    ];
+
+    navTarget.innerHTML = `
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="index.html" class="logo">
+            <i class="fas fa-cross"></i>
+            <span>Faith Defense</span>
+          </a>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-menu">
+            ${navItems.map(item => {
+              const isActive = currentPage === item.href;
+              const className = item.btn ? 'btn btn-primary nav-btn' : 'nav-link';
+              const activeClass = item.btn ? '' : (isActive ? ' active' : '');
+              return `
+                <li>
+                  <a href="${item.href}" class="${className}${activeClass}">${item.label}</a>
+                </li>
+              `;
+            }).join('')}
+          </ul>
+        </div>
+      </nav>
+    `;
+  }
+
+  const footerTarget = document.getElementById('site-footer');
+  if (footerTarget) {
+    footerTarget.innerHTML = `
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <a href="index.html" class="footer-logo">
+                <i class="fas fa-cross"></i>
+                <span>Faith Defense</span>
+              </a>
+              <p>Defending faith and making disciples through historical evidence and biblical truth.</p>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="trial-plan.html">Our Trial Plan</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="index.html">Home</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Testimony</a></li>
+                <li><a href="#">Evidence</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <p>info@faithdefense.org</p>
+              <p>(555) 123-4567</p>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2024 Faith Defense. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    `;
+  }
+}
+
 // Render featured courses on home
 async function renderFeatured() {
   const courses = await loadCourses();
@@ -84,6 +175,8 @@ async function renderCourseDetail() {
 
 // Auto-run based on page
 document.addEventListener('DOMContentLoaded', async () => {
+  renderSiteShell();
+
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
 
